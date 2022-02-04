@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>IE flex</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+        <style>
+            * {box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
+            body,html {margin: 0;padding: 0;}
+            ul {list-style: none;margin: 0;padding: 0;}
+    
+            .popup {overflow: auto;width: 300px;height: 300px;margin:50px auto;}
+            .popup .con {display:flex;flex-wrap:wrap;padding:30px;min-height: 100%;align-items: center;justify-content: center;background: #ddd;text-align: center;}
+            /* IE CSS 추가 */
+            .popup .con::after{content: '';height: 240px;visibility: hidden;}
+
+            .popup .con h1 {margin: 0;}
+            .popup .con p {margin: 10px 0 0;}
+            
+        </style>
+    </head>
+    <body>
+        <!-- 컨텐츠 내용이 짧을 경우 -->
+        <div class="popup">
+            <div class="con">
+                <div>
+                    <h1>제목</h1>
+                    <p>본문 내용</p>
+                    <p>본문 내용</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 컨텐츠 내용이 길 경우 -->
+        <div class="popup">
+            <div class="con">
+                <div>
+                    <h1>제목</h1>
+                    <p>본문 내용</p>
+                    <p>본문 내용</p>
+                    <p>본문 내용</p>
+                    <p>본문 내용</p>
+                    <p>본문 내용</p>
+                    <p>본문 내용</p>
+                    <p>본문 내용</p>
+                    <p>본문 내용</p>
+                    <p>본문 내용</p>
+                    <p>본문 내용</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
